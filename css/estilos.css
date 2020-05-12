@@ -1,0 +1,38 @@
+body {
+    background-image:url('https://wallpapertag.com/wallpaper/full/5/0/d/118977-background-gradient-2560x1600-ios.jpg');
+    background-size: auto 100vh;
+    font-family:Arial;
+    height: 100vh;
+  }
+   
+  a {
+    color: teal;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration:underline;
+  }
+  
+  .menu ul {
+    display:flex;
+    justify-content: space-around;
+  }
+  
+  .menu li{
+    list-style:none;
+  }
+  
+  .menu{
+    background-color:white;
+  }
+  
+  .site-subtitle,
+  .site-title {
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .site-subtitle {
+    font-style: italic;  
+  }
