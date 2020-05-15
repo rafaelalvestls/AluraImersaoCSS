@@ -6,9 +6,9 @@
 }
 
 body {
-    background-image:url('../img/fundo6.png');
+    background-image:url('../img/fundo.png');
     background-size: auto 100vh;
-    font-family: 'Cutive Mono', monospace;
+    font-family: 'Source Code Pro', monospace;
     height: 100vh;
     font-size: 14px;
   }
@@ -83,12 +83,55 @@ header {
     color: #F7311B;  
   }
 
-  .portifolio h2 {
-    font-family: 'Press Start 2P', cursive;
+  .portfolio {
+    padding: 2em;
+    height: 100vh;
   }
+
+  .portfolio h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: whitesmoke;
+    margin-bottom: 1.5em;
+    font-size: 1.5em;
+  }
+
+  .portfolio .grid {
+    color: whitesmoke;
+    display: grid;
+    gap: 2em; 
+  }
+
+  @media (min-width: 560px) {
+    .portfolio .grid {
+    grid-template-columns: 240px 240px;
+    }
+  }
+
+  @media (min-width: 880px) {
+    .portfolio .grid {
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+    }
+  }
+
+  portfolio figure {
+    text-align: center;
+  }  
 
   .img-portfolio {
     height: 180px;
-    width: 180px;
+    width: 240px;
+    object-fit: cover;
+    border-radius: 5%;
   }
-  
+
+  @media (min-width: 1200px) {
+    .img-portfolio {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+ 
