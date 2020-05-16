@@ -31,16 +31,34 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  }
    
   a {
     color: #F5F7F6;
     text-decoration: none;
-
   }
   
   a:hover {
     text-decoration:underline;
+  }
+
+  .titulo {
+    transform: scale(0.2)
+      translateY(50vh);
+      opacity: 0;
+      animation: linear 2s animacaoTitulo forwards;
+  }
+
+  /* chamando animação - transição de 2 segundos*/
+  @keyframes animacaoTitulo {
+    from { 
+      transform: scale(0.2) translateY(50vh);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
   }
 
   .menu {
@@ -49,6 +67,7 @@ header {
     position: fixed;
     top: 0;
     width: 100vw;
+    z-index: 1;
     
   }
   
@@ -64,7 +83,13 @@ header {
   .menu a {
     display: block;
     padding: 10px 20px;
+    transition: background-color 1s, color 1s;
   }
+
+.menu a:hover {
+  background-color: red;
+  color: whitesmoke;
+}
   
   .site-subtitle,
   .site-title {
@@ -80,19 +105,30 @@ header {
   .site-subtitle {
     font-style: italic; 
     font-family: 'Press Start 2P', cursive;
+    line-height: 1.8em;
     color: #F7311B;  
   }
 
+  .about,
+  .contato,
   .portfolio {
     padding: 2em;
-    height: 100vh;
+    min-height: 100vh;
   }
-
+  .about h2,
+  .contato h2,
   .portfolio h2 {
     font-family: 'Press Start 2P', cursive;
     color: whitesmoke;
     margin-bottom: 1.5em;
     font-size: 1.5em;
+  }
+
+  .sobre p {
+    color: whitesmoke;
+    margin-bottom: 1.4em;
+    text-indent: 1.4em;
+    text-align: justify;
   }
 
   .portfolio .grid {
@@ -116,6 +152,13 @@ header {
     }
   }
 
+  @media (min-width: 1200px) {
+    .img-portfolio {
+      height: auto;
+      width: 100%;
+    }
+  }
+
   portfolio figure {
     text-align: center;
   }  
@@ -124,14 +167,31 @@ header {
     height: 180px;
     width: 240px;
     object-fit: cover;
-    border-radius: 5%;
+    object-position: left bottom;
+    border-radius: 10%;
+    border: 3px solid #F7311B;
+    transition: transform 500ms;
   }
 
-  @media (min-width: 1200px) {
-    .img-portfolio {
-      height: auto;
-      width: 100%;
-    }
+  .img-portfolio:hover {
+    transform: scale(1.2);
+}
+
+  .contato .icons {
+    text-align: center;
   }
 
+  .contato a {
+    color:whitesmoke;
+    font-size: 6em;
+    transition: text-shadow 1s;
+  }
+
+  .contato a:active,
+  .contato a:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(247,49,27,1);
+}
+
+  
  

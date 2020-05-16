@@ -7,23 +7,40 @@
   <title>Rafael Silva</title>
   <link rel="stylesheet" href="css/estilos.css">
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Press+Start+2P&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a1fa5e94a4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <nav class="menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfólio</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
-    <div>
+    <div class="titulo">
         <h1 class="site-title">Rafael Silva</h1>
-        <h2 class="site-subtitle">Jr. Web Developer</h2>
+        <h2 class="site-subtitle">Jr. Frontend Developer</h2>
     </div>
   </header>
-  <section class="portfolio">
+  <section class="about">
+      <h2>About me</h2>
+      <figure>
+          <img src="../Imersão_hipsterscss/img/eu.jpg" alt="About me">
+      </figure>
+      <p>
+        Olá, meu nome é Rafael, sou formado em Tecnologia em Análise e Desenvolvimento de Sistemas pela FITL - Faculdade Integradas de Três Lagoas/MS, e atualmente cursando especialiação em Desenvolvimento Web Full Stack pela Puc Minas.
+      </p>
+      <p>
+        Atualmente trabalho como analista de projeto, estou sempre buscando me atualizar e aprender algo novo, atualmente focando meus estudos e me aprofundando em desenvolvimento Web. 
+      </p>
+      <p>
+        Esse pequeno site é fruto da <a href="https://www.alura.com.br/imersao-css">#ImersãoCSS</a>, promovido pela Alura, durante os dias 11 a 15 de maio de 2020.
+      </p>
+  </section>
+  <section class="portfolio" id="portfolio">
     <h2>Portfólio</h2>
     <div class="grid"> 
       <figure>
@@ -42,6 +59,20 @@
         <img class="img-portfolio" src="../Imersão_hipsterscss/img/estudos.png" alt="Projetos de Estudo">
         <figcaption>Projetos de Estudo</figcaption>
       </figure>
+    </div>
+  </section>
+  <section class="contato" id="contato">
+    <h2>Contato</h2>
+      <div class="grid icons">
+      <a target="_blank" href="https://github.com/rafaelsillva">
+        <i class="fab fa-github"></i>
+      </a>
+      <a target="_blank" href="https://https://www.linkedin.com/in/rafaelsillva/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:rafael.alvestls@gmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
     </div>
   </section>
 </body>
