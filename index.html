@@ -6,74 +6,150 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rafael Silva</title>
   <link rel="stylesheet" href="css/estilos.css">
-  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Press+Start+2P&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link href=https://fonts.googleapis.com/css2?family=Cantata+One&family=Press+Start+2P&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="../Imersão_hipsterscss/js/animacao.js"></script>
   <script src="https://kit.fontawesome.com/a1fa5e94a4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-    <nav class="menu">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-    <div class="titulo">
-        <h1 class="site-title">Rafael Silva</h1>
-        <h2 class="site-subtitle">Jr. Frontend Developer</h2>
-    </div>
-  </header>
-  <section class="about">
+    <header id="top"> 
+      <nav class="menu">
+        <ul class="container">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <section class="home container" id="home">
+          <h1 class="site-title">Rafael Silva</h1>
+        <div class="titulo-principal">
+          <h2 class="site-subtitle">Jr. Web Developer</h2>
+        </div>
+      </section>
+    </header>
+
+    <section class="about container" id="about">
+
       <h2>About me</h2>
-      <figure>
-          <img src="../Imersão_hipsterscss/img/eu.jpg" alt="About me">
+
+      <figure class="avatar">
+        <img src="../Imersão_hipsterscss/img/eu.jpg" alt="About me">
       </figure>
       <p>
-        Olá, meu nome é Rafael, sou formado em Tecnologia em Análise e Desenvolvimento de Sistemas pela FITL - Faculdade Integradas de Três Lagoas/MS, e atualmente cursando especialiação em Desenvolvimento Web Full Stack pela Puc Minas.
+        Olá, meu nome é Rafael, sou formado em Tecnologia em Análise e Desenvolvimento de Sistemas pela FITL - Faculdade
+        Integradas de Três Lagoas/MS, atualmente estou cursando especialiação em Desenvolvimento Web Full Stack pela Puc Minas.
       </p>
       <p>
-        Atualmente trabalho como analista de projeto, estou sempre buscando me atualizar e aprender algo novo, atualmente focando meus estudos e me aprofundando em desenvolvimento Web. 
+        Trabalho como analista de projetos na área de telecomunicação com projeto de redes ópticas FTTH, tenho experiência em infraestrutura e service desk.
       </p>
       <p>
-        Esse pequeno site é fruto da <a href="https://www.alura.com.br/imersao-css">#ImersãoCSS</a>, promovido pela Alura, durante os dias 11 a 15 de maio de 2020.
+        Estou sempre buscando apreender e compartilhar algo novo, neste momento foco meus estudos no desenvolvimento web com as tecnologias (PHP|Laravel, CSS3, HTML5, Javascript, Bootstrap).
       </p>
-  </section>
-  <section class="portfolio" id="portfolio">
-    <h2>Portfólio</h2>
-    <div class="grid"> 
-      <figure>
-        <img class="img-portfolio" src="../Imersão_hipsterscss/img/web.jpg" alt="Desenvolvimento Web">
-        <figcaption>Desenvolvimento Web</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="../Imersão_hipsterscss/img/mobile.png" alt=">Desenvolvimento Mobile">
-        <figcaption>Desenvolvimento Mobile</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="../Imersão_hipsterscss/img/webdesign.jpg" alt="Web design">
-        <figcaption>Web design</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="../Imersão_hipsterscss/img/estudos.png" alt="Projetos de Estudo">
-        <figcaption>Projetos de Estudo</figcaption>
-      </figure>
-    </div>
-  </section>
-  <section class="contato" id="contato">
-    <h2>Contato</h2>
+      <p>
+        Nas horas vagas gosto de assistir filmes e séries e sou adepto da prática de corrida de rua.
+      </p>
+      <p>
+        Esse pequeno site que ainda está em desenvolvimento é fruto da <a href="https://www.alura.com.br/imersao-css">#ImersãoCSS</a>, promovido pela
+        Alura, durante os dias 11 a 15 de maio de 2020.
+      </p>
+    </section>
+
+    <section class="portfolio container" id="portfolio">
+
+      <h2>Portfólio</h2>
+
+      <div class="grid">
+
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="../Imersão_hipsterscss/img/backend.jpg" alt="Desenvolvimento Backend">
+              <figcaption>Desenvolvimento Backend</figcaption>
+            </figure>
+            <div class="card-back">
+              <h3>Developer Backend</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="../Imersão_hipsterscss/img/frontend.jpg" alt="Desenvolvimento Frontend">
+              <figcaption>Desenvolvimento Frontend</figcaption>
+            </figure>
+            <div class="card-back">
+              <h3>Developer Frontend</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="../Imersão_hipsterscss/img/mobile.png" alt="Desenvolvimento Mobile">
+              <figcaption>Desenvolvimento Mobile</figcaption>
+            </figure>
+            <div class="card-back">
+              <h3>Developer Mobile</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="../Imersão_hipsterscss/img/UX.UI.jpg" alt="Designer UX/UI">
+              <figcaption>Designer UX/UI</figcaption>
+            </figure>
+            <div class="card-back">
+              <h3>Designer UX/UI</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="../Imersão_hipsterscss/img/estudos.png" alt="Projetos de Estudo">
+              <figcaption>Projetos de Estudo</figcaption>
+            </figure>
+            <div class="card-back">
+              <h3>Projects Study</h3>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <section class="contato container" id="contato">
+
+      <h2>Contato</h2>
+
       <div class="grid icons">
-      <a target="_blank" href="https://github.com/rafaelsillva">
-        <i class="fab fa-github"></i>
-      </a>
-      <a target="_blank" href="https://https://www.linkedin.com/in/rafaelsillva/">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="mailto:rafael.alvestls@gmail.com">
-        <i class="fas fa-envelope"></i>
-      </a>
-    </div>
-  </section>
-</body>
+
+        <a target="_blank" href="https://github.com/rafaelsillva">
+          <i class="fab fa-github"></i>
+        </a>
+        <a target="_blank" href="https://https://www.linkedin.com/in/rafaelsillva/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https:https://codepen.io/rafaelsillva">
+          <i class="fab fa-codepen"></i>
+        </a>
+        <a target="_blank" href="https:https://t.me/rasillva">
+          <i class="fab fa-telegram"></i>
+        </a>
+        <a href="mailto:rafael.alvestls@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </section>
+    <footer> == $0
+      <nav class="rodape">
+        <h4>© 2020, Rafael A. Silva. Todos os direitos reservados. </h4>
+      </nav>
+    </footer>
+  </body>
 </html>
